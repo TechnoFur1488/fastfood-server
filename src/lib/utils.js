@@ -9,7 +9,7 @@ export const generateToken = (userId, role, res) => {
         maxAge: 24 * 60 * 60 * 1000,
         httpOnly: true,
         sameSite: "none",
-        // secure: true,
-        // domain: "fastfood-server-production.up.railway.app"
+        secure: true,
+        domain: "fastfood-server-production.up.railway.app"
     })
 }
