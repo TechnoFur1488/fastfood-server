@@ -68,6 +68,10 @@ class UserController {
         }
     }
 
+    async getRole(req, res) {
+        return res.status(200).json({ role: req.user.role })
+    }
+
 }
 
 export default new UserController()
