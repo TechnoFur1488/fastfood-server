@@ -21,7 +21,7 @@ app.use(express.static(path.resolve(__dirname, "..", "static")))
 app.use(fileUpload())
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: ["https://fastfood-client-git-main-nikitas-projects-e30fe775.vercel.app", "https://fastfood-client-beta.vercel.app"],
     credentials: true,
 }))
 
