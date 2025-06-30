@@ -8,7 +8,7 @@ export const generateToken = (userId, role, res) => {
     res.cookie("jwt", token, {
         maxAge: 24 * 60 * 60 * 1000,
         httpOnly: true,
-        sameSite: "strict",
+        sameSite: "none",
         secure: true,
         domain: "fastfood-server-production.up.railway.app"
     })
